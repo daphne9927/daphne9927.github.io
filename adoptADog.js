@@ -7,8 +7,7 @@ function bindButtons(){
 
     var dog = document.getElementById('dog').value;
    
-    var getString =  "https://api.petfinder.com/v2/animals?q=" + dog + petFinderKey;
-	
+   	var getString = "http://api.petfinder.com/v2/animals?key="petFinderKey"&type="dog";
 	console.log("getString='" + getString + "'");
     req.open('GET', getString, true);
     req.addEventListener('load',function(){
