@@ -11,7 +11,8 @@ function bindButtons(){
     //practice weather "https://api.openweathermap.org/data/2.5/weather?q="
 	//var getString = "https://api.openweathermap.org/data/2.5/weather?q=" + dog + ",us&units=imperial&appid=fa7d80c48643dfadde2cced1b1be6ca1";
     var getString = "https://dog.ceo/api/breeds/image/random?q=" + dog;
-	console.log("getString='" + getString + "'");
+	var getString = "https://dog.ceo/api/breeds/blenheim spaniel";
+	  console.log("getString='" + getString + "'");
     req.open('GET', getString, true);
 	console.log("getString='" + getString + "'");
     req.open('GET', getString, true);
