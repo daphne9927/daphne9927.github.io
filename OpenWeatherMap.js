@@ -23,7 +23,10 @@ function bindButtons(){
         document.getElementById('tooHot').innerHTML = "Too hot to walk the dog!";
         }
         else
+        {
         document.getElementById('temp').innerHTML = null;
+        document.getElementById('tooHot').innerHTML = null;
+        }
         } else {
         console.log("Error in network request: " + response.id);
      }});
