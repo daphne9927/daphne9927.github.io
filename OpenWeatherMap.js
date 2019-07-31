@@ -16,11 +16,8 @@ function bindButtons(){
         document.getElementById('temperature').textContent = response.main.temp;
         document.getElementById('humidity').textContent = response.main.humidity;
         var walkTemperature = response.main.temp;
-        if(walkTemperature > 90)
-        {
-         alert("too hot"); 
-        }
-      } else {
+        console.log(response.main.temp);
+        } else {
         console.log("Error in network request: " + response.id);
      }});
     req.send(null);
