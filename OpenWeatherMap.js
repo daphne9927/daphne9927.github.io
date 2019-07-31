@@ -17,14 +17,14 @@ function bindButtons(){
         document.getElementById('humidity').textContent = response.main.humidity;
         var walkTemp = response.main.temp;
         console.log("walkTemp " + walkTemp);
-       if(walkTemp > 90.0)
-        document.getElementById('temp').innerHTML = walkTemp;
-        else
+        var msg = "Don't walk the dog.";
+        if(walkTemp > 90.0)
         {
-          document.getElementById('temp').innerHTML = null;
-          document.getElementById('tooHot').innerHtml = "Don't walk the dog.";
+        document.getElementById('temp').innerHTML = walkTemp;
+        document.getElementById('tooHot').innerHtml = msg;
         }
-        //note that once the temperature has been logged as over 90, the result stays on the screen even if another city is searched.
+        else
+        document.getElementById('temp').innerHTML = null;
         } else {
         console.log("Error in network request: " + response.id);
      }});
