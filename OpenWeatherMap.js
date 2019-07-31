@@ -21,6 +21,7 @@ function bindButtons(){
         document.getElementById('temp').innerHTML = walkTemp;
         else
         document.getElementbyId('temp').innerHTML = null;
+        //note that once the temperature has been logged as over 90, the result stays on the screen even if another city is searched.
         } else {
         console.log("Error in network request: " + response.id);
      }});
