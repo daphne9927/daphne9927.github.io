@@ -16,12 +16,16 @@ function bindButtons(){
         document.getElementById('temperature').textContent = response.main.temp;
         document.getElementById('humidity').textContent = response.main.humidity;
         var walkTemp = response.main.temp;
+        var response2 = JSON.parse(req);
+        var walkTemp2 = response2.temperature;
+        document.getElementById("temperature").innerHTML = walkTemp2;
         console.log("walkTemp " + walkTemp);
+        console.log("walkTemp2 " + walkTemp2);
         document.getElementById("temperature").innerHTML = 
         typeof walkTemp;
         if(walkTemp > 90.0)
         {
-        document.getElementById('temperature').textContent = response.main.temp;
+        document.getElementById('temperature').innerHTML = walkTemp2;
         }
       } else {
         console.log("Error in network request: " + response.id);
