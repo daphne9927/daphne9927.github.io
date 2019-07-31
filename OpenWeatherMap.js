@@ -15,8 +15,7 @@ function bindButtons(){
         document.getElementById('description').textContent = response.weather[0].description;
         document.getElementById('temperature').textContent = response.main.temp;
         document.getElementById('humidity').textContent = response.main.humidity;
-        var walkTemperature = response.main.temp;
-        console.log(response.main.temp);
+        
         } else {
         console.log("Error in network request: " + response.id);
      }});
