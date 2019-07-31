@@ -17,11 +17,10 @@ function bindButtons(){
         document.getElementById('humidity').textContent = response.main.humidity;
         var walkTemp = response.main.temp;
         console.log("walkTemp " + walkTemp);
-        var msg = "Don't walk the dog.";
         if(walkTemp > 90.0)
         {
         document.getElementById('temp').innerHTML = walkTemp;
-        document.getElementById('tooHot').innerHtml = msg;
+        document.getElementById('tooHot').innerHTML = "Too hot to walk the dog!";
         }
         else
         document.getElementById('temp').innerHTML = null;
