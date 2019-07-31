@@ -17,6 +17,7 @@ function bindButtons(){
         document.getElementById('humidity').textContent = response.main.humidity;
         var walkTemp = response.main.temp;
         console.log("walkTemp " + walkTemp);
+        alert("walkTemp");
       } else {
         console.log("Error in network request: " + response.id);
      }});
