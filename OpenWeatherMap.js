@@ -20,7 +20,10 @@ function bindButtons(){
        if(walkTemp > 90.0)
         document.getElementById('temp').innerHTML = walkTemp;
         else
-        document.getElementbyId('temp').innerHTML = null;
+        {
+          document.getElementById('temp').innerHTML = null;
+          document.getElementById('tooHot').innerHtml = "Don't walk the dog.";
+        }
         //note that once the temperature has been logged as over 90, the result stays on the screen even if another city is searched.
         } else {
         console.log("Error in network request: " + response.id);
