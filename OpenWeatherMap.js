@@ -17,6 +17,7 @@ function bindButtons(){
         document.getElementById('humidity').textContent = response.main.humidity;
         var walkTemp = response.main.temp;
         console.log("walkTemp " + walkTemp);
+        typeof walkTemp;
         if(walkTemp > 90.0)
         {
         document.getElementById('temperature').textContent = response.main.temp;
