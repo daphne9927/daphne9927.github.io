@@ -16,7 +16,7 @@ function bindButtons(){
         document.getElementById('temperature').textContent = response.main.temp;
        // var currentTemp = response.main.temp;
        // if(currentTemp > 90){
-        //alert("It's too hot to walk the dog);
+        //alert("It's too hot to walk the dog");
          //     }
         document.getElementById('humidity').textContent = response.main.humidity;
       } else {
