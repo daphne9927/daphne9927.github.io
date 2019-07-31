@@ -20,12 +20,12 @@ function bindButtons(){
         if(walkTemp > 90.0)
         {
         document.getElementById('temp').innerHTML = walkTemp;
-        document.getElementById('tooHot').innerHTML = "Too hot to walk the dog!";
+        document.getElementById('tooHot').innerHTML = "Over 90 degrees is too hot to walk the dog!";
         }
         else
         {
-        document.getElementById('temp').innerHTML = null;
-        document.getElementById('tooHot').innerHTML = null;
+        document.getElementById('temp').innerHTML = walkTemp;
+        document.getElementById('tooHot').innerHTML = "Under 90 degrees it is safe enough to walk the dog!";
         }
         } else {
         console.log("Error in network request: " + response.id);
