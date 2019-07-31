@@ -20,7 +20,7 @@ function bindButtons(){
        if(walkTemp > 90.0)
         document.getElementById('temp').innerHTML = walkTemp;
         else
-        document.getElementbyId('temp).innerHTML = null;
+        document.getElementbyId('temp').innerHTML = null;
         } else {
         console.log("Error in network request: " + response.id);
      }});
