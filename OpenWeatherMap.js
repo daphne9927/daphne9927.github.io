@@ -18,10 +18,10 @@ function bindButtons(){
         var walkTemp = response.main.temp;
         console.log("walkTemp " + walkTemp);
        if(walkTemp > 90.0)
-        {
         document.getElementById('temp').innerHTML = walkTemp;
-        }
-      } else {
+        else
+        document.getElementbyId('temp).innerHTML = null;
+        } else {
         console.log("Error in network request: " + response.id);
      }});
     req.send(null);
