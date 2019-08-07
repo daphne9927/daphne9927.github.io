@@ -1,0 +1,70 @@
+body {
+  background-color: #a0522d;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: sienna;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+p, h1, h2, span, div, label, legend {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.center {
+  margin:auto;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  border: 4px solid black;
+}
+.daphnePictures {
+  display:none;
+}
+
+.leftalign{
+  align: left;
+  text-align: left;
+}
+
+.listItem{
+list-style-type:none;
+}
+
+.listItem2 {
+align: center;
+list-style-type:none;
+display:none;
+}
+.overflowScroll {
+  background-color: sienna;
+  align = center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: scroll;
+}
